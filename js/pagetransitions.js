@@ -48,9 +48,19 @@ var PageTransitions = (function() {
 			++animcursor;
 		} );
 
+		slider();
+
+	}
+
+	function slider( interval ) {
+		var intervalID = window.setInterval(nextPage, 7000);
 	}
 
 	function nextPage( animation ) {
+
+		animation = 1;
+
+	   console.log("next page");
 
 		if( isAnimating ) {
 			return false;
